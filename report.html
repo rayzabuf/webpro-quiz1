@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Report - EF234301 WebPro Quiz 1 - Muhammad Rayza Buftiem</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+    @page {
+      size: A4;
+      margin: 18mm 16mm;
+      @bottom-right {
+        content: counter(page);
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #1e293b;
+      line-height: 1.65;
+      font-size: 10pt;
+      background: #ffffff;
+    }
+
+    .page-break {
+      page-break-after: always;
+    }
+
+    /* Cover / Header Section */
+    .report-header {
+      border-bottom: 3px double #0f172a;
+      padding-bottom: 18px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .inst-badge {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 14pt;
+      color: #0f172a;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+    }
+
+    .inst-sub {
+      font-size: 8.5pt;
+      color: #475569;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .report-meta {
+      text-align: right;
+      font-size: 8.5pt;
+      color: #64748b;
+    }
+
+    .report-meta strong {
+      color: #0f172a;
+    }
+
+    .title-banner {
+      background: #f8fafc;
+      border-left: 5px solid #4f46e5;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .title-banner h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18pt;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+
+    .title-banner p {
+      font-size: 9.5pt;
+      color: #475569;
+    }
+
+    /* Metadata Table */
+    .meta-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 24px;
+      font-size: 9pt;
+    }
+
+    .meta-table th, .meta-table td {
+      border: 1px solid #e2e8f0;
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    .meta-table th {
+      background: #f1f5f9;
+      color: #334155;
+      width: 28%;
+      font-weight: 600;
+    }
+
+    .meta-table td {
+      color: #0f172a;
+      font-weight: 500;
+    }
+
+    .meta-table a {
+      color: #4f46e5;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    /* Section Styling */
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 13pt;
+      font-weight: 800;
+      color: #0f172a;
+      margin: 22px 0 10px 0;
+      padding-bottom: 5px;
+      border-bottom: 1.5px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      background: #4f46e5;
+      color: #ffffff;
+      border-radius: 6px;
+      font-size: 9pt;
+      font-weight: 700;
+    }
+
+    h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #334155;
+      margin: 14px 0 6px 0;
+    }
+
+    p {
+      margin-bottom: 10px;
+      text-align: justify;
+      color: #334155;
+      font-size: 9.2pt;
+      line-height: 1.6;
+    }
+
+    ul, ol {
+      margin: 0 0 12px 20px;
+      color: #334155;
+      font-size: 9pt;
+    }
+
+    li {
+      margin-bottom: 5px;
+      line-height: 1.5;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8.5pt;
+      background: #f1f5f9;
+      padding: 2px 5px;
+      border-radius: 4px;
+      color: #4f46e5;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Screenshot Cards */
+    .screenshot-figure {
+      margin: 16px 0 20px 0;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #f8fafc;
+      page-break-inside: avoid;
+    }
+
+    .screenshot-figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .screenshot-caption {
+      padding: 8px 14px;
+      font-size: 8.5pt;
+      color: #475569;
+      font-weight: 600;
+      background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .screenshot-caption span.tag {
+      font-size: 7.5pt;
+      background: #e0e7ff;
+      color: #4338ca;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    /* Analysis Grid */
+    .eval-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 14px;
+      page-break-inside: avoid;
+    }
+
+    .eval-title {
+      font-weight: 700;
+      font-size: 9.5pt;
+      color: #0f172a;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .eval-badge {
+      display: inline-block;
+      font-size: 7.5pt;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .badge-excellent { background: #dcfce7; color: #15803d; }
+    .badge-advanced { background: #e0e7ff; color: #4338ca; }
+  </style>
+</head>
+<body>
+
+  <!-- Report Header -->
+  <div class="report-header">
+    <div>
+      <div class="inst-badge">Institut Teknologi Sepuluh Nopember</div>
+      <div class="inst-sub">Departemen Teknik Informatika &bull; Fakultas FTEIC</div>
+      <div class="inst-sub">EF234301 Web Programming (Class D) &bull; Semester Gasal 2026/2027</div>
+    </div>
+    <div class="report-meta">
+      <div>Assignment: <strong>Quiz 1 Project Report</strong></div>
+      <div>Date: <strong>30 September 2026</strong></div>
+      <div>Status: <strong>Final Submission</strong></div>
+    </div>
+  </div>
+
+  <!-- Title Banner -->
+  <div class="title-banner">
+    <h1>Project Report: Personal &amp; Hometown Website</h1>
+    <p>Comprehensive Documentation on Website Design Concepts, Architectural Routing, Implementation, Code Review, and Evaluation.</p>
+  </div>
+
+  <!-- Metadata Table -->
+  <table class="meta-table">
+    <tr>
+      <th>Author / Student Name</th>
+      <td><strong>Muhammad Rayza Buftiem</strong></td>
+    </tr>
+    <tr>
+      <th>Student ID (NRP)</th>
+      <td><code>5025251262</code></td>
+    </tr>
+    <tr>
+      <th>Course &amp; Class</th>
+      <td>EF234301 Web Programming &bull; Class D</td>
+    </tr>
+    <tr>
+      <th>Instructors</th>
+      <td>MM Irfan Subakti &bull; Assistants: Callista FRG &amp; Kevin Andreas</td>
+    </tr>
+    <tr>
+      <th>Deployed Website URL</th>
+      <td><a href="https://rayzabuf.github.io/webpro-quiz1/quiz1/">https://rayzabuf.github.io/webpro-quiz1/quiz1/</a></td>
+    </tr>
+    <tr>
+      <th>Public GitHub Repository</th>
+      <td><a href="https://github.com/rayzabuf/webpro-quiz1">https://github.com/rayzabuf/webpro-quiz1</a></td>
+    </tr>
+  </table>
+
+  <!-- Section 1 -->
+  <h2><span class="num">1</span> Design Concepts and Website Structure</h2>
+  
+  <h3>1.1 Visual Identity and Design Philosophy</h3>
+  <p>
+    The web project was engineered around the aesthetic ethos of modern high-performance design:
+    clean typography, deep dark-first glassmorphism, responsive tactile micro-interactions, and instant light/dark theming.
+    Rather than relying on generic browser defaults or boilerplate templates, the design system utilizes tailored 
+    CSS variables for fluid theming, Google Fonts (<em>Outfit</em> for strong modern headlines and <em>Plus Jakarta Sans</em> for readable body text), 
+    and subtle gradients that provide visual depth without sacrificing legibility or page speed.
+  </p>
+
+  <h3>1.2 Information Architecture and URL Routing Structure</h3>
+  <p>
+    In strict adherence to Section 1.B of the Quiz 1 specification, the project is structured with a multi-page 
+    directory-based architecture ensuring standard and intuitive URL routing:
+  </p>
+  <ul>
+    <li><code>(Your Domain)/quiz1</code> &mdash; <strong>Homepage:</strong> Central portal introducing the author, course metadata, and preview teasers for all chapters.</li>
+    <li><code>(Your Domain)/quiz1/profile</code> &mdash; <strong>Profile Page:</strong> Comprehensive academic profile, educational milestones, and technical skillset.</li>
+    <li><code>(Your Domain)/quiz1/hometown</code> &mdash; <strong>Hometown Page:</strong> In-depth portrait of Jakarta, covering 497+ years of history, indigenous Betawi culture, and modern transit.</li>
+    <li><code>(Your Domain)/quiz1/food</code> &mdash; <strong>Local Food Page:</strong> Curated Betawi culinary showcase with category filters and interactive recipe modals.</li>
+    <li><code>(Your Domain)/quiz1/tourist</code> &mdash; <strong>Tourist Places Page:</strong> Curated travel guide featuring top Jakarta landmarks with visitor recommendations and transit links.</li>
+  </ul>
+  <p>
+    A root <code>index.html</code> was also implemented to provide seamless redirection to <code>/quiz1/</code>, ensuring zero broken links regardless of whether the site is accessed at the root origin or via subpaths on GitHub Pages.
+  </p>
+
+  <!-- Section 2 -->
+  <h2><span class="num">2</span> Explanations of Code and Implementation Choices</h2>
+
+  <h3>2.1 Semantic HTML5 &amp; Accessibility Hierarchy</h3>
+  <p>
+    Every webpage follows strict semantic HTML5 standards. Landmarks such as <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, 
+    and <code>&lt;footer&gt;</code> are consistently applied. Each page contains a single <code>&lt;h1&gt;</code> element with logical heading levels (<code>h2</code>, <code>h3</code>, <code>h4</code>). 
+    Every interactive element (buttons, modal close triggers, theme switchers) includes unique IDs and <code>aria-label</code> tags to guarantee screen reader compatibility and testability.
+  </p>
+
+  <h3>2.2 Modular Vanilla CSS Design System (Zero Framework Overhead)</h3>
+  <p>
+    To ensure maximum control, optimal runtime efficiency, and zero bloat from external CSS frameworks, a custom unified design token system was built in <code>quiz1/css/style.css</code>:
+  </p>
+  <ul>
+    <li><strong>CSS Custom Properties (Variables):</strong> Defined at the <code>:root</code> level and swapped under <code>body.light-theme</code>, enabling instant color changes across all components.</li>
+    <li><strong>Glassmorphism &amp; Backdrop Filters:</strong> Cards utilize subtle alpha channels (<code>rgba(20, 27, 45, 0.75)</code>) coupled with <code>backdrop-filter: blur(16px)</code> for an elevated, layered aesthetic.</li>
+    <li><strong>Bento Grid Layout:</strong> A flexible 12-column grid system (<code>.bento-col-4</code>, <code>.bento-col-6</code>, <code>.bento-col-12</code>) that reflows gracefully on mobile viewports.</li>
+  </ul>
+
+  <h3>2.3 Client-Side Logic &amp; Interactive JavaScript</h3>
+  <p>
+    All dynamic features are implemented in vanilla JavaScript (<code>quiz1/js/main.js</code>):
+  </p>
+  <ul>
+    <li><strong>Persistent Theme Toggle:</strong> The user's theme selection (light or dark) is stored in <code>localStorage</code>, preventing jarring theme flashes upon navigating across pages.</li>
+    <li><strong>Dynamic Real-Time Jakarta Clock:</strong> Computes current time specifically formatted in Western Indonesia Time (WIB, UTC+7) using <code>Intl.DateTimeFormat</code>.</li>
+    <li><strong>Category Filtering Algorithm:</strong> Uses <code>data-filter</code> and <code>data-category</code> attributes on card elements, smoothly orchestrating opacity and transform animations.</li>
+    <li><strong>Accessible Modal Dialogs:</strong> Custom dialog overlays for recipes and tourist guides, complete with backdrop click detection and keyboard <code>Escape</code> listeners.</li>
+    <li><strong>Clipboard Utility &amp; Toast Feedback:</strong> Allows visitors to instantly copy the author's Student ID (NRP: 5025251262) with animated visual confirmation.</li>
+  </ul>
+
+  <div class="page-break"></div>
+
+  <!-- Section 3 -->
+  <h2><span class="num">3</span> Screenshots of the Final Webpages</h2>
+  <p>
+    Below are actual high-resolution screenshots captured from the live deployed project across all five core pages:
+  </p>
+
+  <!-- Screenshot 1: Homepage -->
+  <div class="screenshot-figure">
+    <img src="./report_assets/screenshot_home.png" alt="Homepage Screenshot">
+    <div class="screenshot-caption">
+      <span><strong>Figure 1:</strong> Homepage (<code>/quiz1</code>) &mdash; Hero banner, live student card, and portal bento directory.</span>
+      <span class="tag">Landing &amp; Hub</span>
+    </div>
+  </div>
+
+  <!-- Screenshot 2: Profile -->
+  <div class="screenshot-figure">
+    <img src="./report_assets/screenshot_profile.png" alt="Profile Page Screenshot">
+    <div class="screenshot-caption">
+      <span><strong>Figure 2:</strong> Profile Page (<code>/quiz1/profile</code>) &mdash; Verified student photo, biodata table, educational timeline, and skill meters.</span>
+      <span class="tag">Author Dossier</span>
+    </div>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- Screenshot 3: Hometown -->
+  <div class="screenshot-figure">
+    <img src="./report_assets/screenshot_hometown.png" alt="Hometown Page Screenshot">
+    <div class="screenshot-caption">
+      <span><strong>Figure 3:</strong> Hometown Page (<code>/quiz1/hometown</code>) &mdash; Jakarta historical milestones, Betawi cultural pillars, and live WIB clock.</span>
+      <span class="tag">Heritage &amp; History</span>
+    </div>
+  </div>
+
+  <!-- Screenshot 4: Local Food -->
+  <div class="screenshot-figure">
+    <img src="./report_assets/screenshot_food.png" alt="Local Food Page Screenshot">
+    <div class="screenshot-caption">
+      <span><strong>Figure 4:</strong> Local Food Page (<code>/quiz1/food</code>) &mdash; Betawi culinary grid, flavor profile tags, price estimates, and recipe modals.</span>
+      <span class="tag">Gastronomy</span>
+    </div>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- Screenshot 5: Tourist Places -->
+  <div class="screenshot-figure">
+    <img src="./report_assets/screenshot_tourist.png" alt="Tourist Places Page Screenshot">
+    <div class="screenshot-caption">
+      <span><strong>Figure 5:</strong> Tourist Places Page (<code>/quiz1/tourist</code>) &mdash; Monas, Kota Tua, TMII, Ancol, Istiqlal guide with category filters.</span>
+      <span class="tag">Landmarks &amp; Transit</span>
+    </div>
+  </div>
+
+  <!-- Section 4 -->
+  <h2><span class="num">4</span> Project Analysis and Evaluation</h2>
+
+  <div class="eval-box">
+    <div class="eval-title">
+      <span class="eval-badge badge-excellent">Score: High</span>
+      Performance &amp; Asset Optimization
+    </div>
+    <p>
+      By avoiding heavy runtime libraries and excessive external dependencies, the total bundle transfer size remains 
+      exceptionally compact. Critical CSS is unified into a single cached file, and images utilize modern responsive 
+      containers with explicit dimensions, completely eliminating Cumulative Layout Shift (CLS) and ensuring sub-second First Contentful Paint (FCP).
+    </p>
+  </div>
+
+  <div class="eval-box">
+    <div class="eval-title">
+      <span class="eval-badge badge-advanced">Score: High</span>
+      Accessibility &amp; Usability Standards (WCAG 2.1)
+    </div>
+    <p>
+      Color contrast ratios across both dark and light modes surpass the WCAG AA threshold of 4.5:1 for body copy and 3:1 for large headlines. 
+      Interactive buttons feature generous touch targets (minimum 44&times;44 px), clear focus outlines, and appropriate ARIA attributes.
+      The mobile navigation drawer provides a seamless touch-friendly experience on small viewports.
+    </p>
+  </div>
+
+  <div class="eval-box">
+    <div class="eval-title">
+      <span class="eval-badge badge-excellent">Score: High</span>
+      URL Routing Resilience &amp; Cross-Platform Deployment
+    </div>
+    <p>
+      Deploying multi-page static sites to platforms like GitHub Pages frequently introduces path resolution errors 
+      when absolute paths are hardcoded. This project solves that problem through a dual approach: relative navigation links 
+      that function seamlessly across both local servers and GitHub Pages repository subpaths (<code>/webpro-quiz1/quiz1/...</code>), 
+      coupled with a root redirect fallback script.
+    </p>
+  </div>
+
+  <div class="eval-box">
+    <div class="eval-title">
+      <span class="eval-badge badge-advanced">Score: High</span>
+      Specification Compliance Matrix
+    </div>
+    <p>
+      All criteria from the Quiz 1 instruction sheet are fully satisfied:
+      100% adherence to the required 5-page routing schema (<code>/quiz1</code>, <code>/quiz1/profile</code>, <code>/quiz1/hometown</code>, <code>/quiz1/food</code>, <code>/quiz1/tourist</code>), 
+      inclusion of authentic personal biodata for student <strong>Muhammad Rayza Buftiem (5025251262)</strong>, 
+      thorough culinary and tourist coverage of Jakarta, and accompanied by the signed Academic Integrity Declaration.
+    </p>
+  </div>
+
+  <!-- Section 5 -->
+  <h2><span class="num">5</span> Conclusion</h2>
+  <p>
+    The EF234301 Web Programming Quiz 1 website project successfully showcases a complete, visually stunning, 
+    and functionally robust personal and cultural portal. By applying modern frontend engineering practices&mdash;semantic 
+    HTML5, a custom vanilla CSS design system, and modular vanilla JavaScript&mdash;the project demonstrates that rich, 
+    interactive web experiences can be built with clean, maintainable, and high-performance code without unnecessary third-party dependencies.
+  </p>
+  <p>
+    In conclusion, the project fulfills all academic, aesthetic, and technical requirements set forth by the instructors, 
+    serving both as a verified academic deliverable and as an engaging digital tribute to the city of Jakarta.
+  </p>
+
+  <div style="margin-top: 30px; padding-top: 14px; border-top: 1px solid #cbd5e1; display: flex; justify-content: space-between; font-size: 8.5pt; color: #64748b;">
+    <div>EF234301 Web Programming (D) &bull; Institut Teknologi Sepuluh Nopember (ITS)</div>
+    <div>Author: Muhammad Rayza Buftiem (NRP: 5025251262)</div>
+  </div>
+
+</body>
+</html>

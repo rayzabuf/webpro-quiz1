@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guide to Top Tourist Attractions and Historic Landmarks in Jakarta curated by Muhammad Rayza Buftiem.">
+  <meta name="author" content="Muhammad Rayza Buftiem">
+  <meta property="og:title" content="Tourist Places | Jakarta Travel Guide - Muhammad Rayza Buftiem">
+  <meta property="og:description" content="Explore Monas, Kota Tua, TMII, Ancol, and Istiqlal Mosque in Jakarta. Complete visitor guide with transit directions.">
+  
+  <title>Tourist Places | Jakarta Attractions - Muhammad Rayza Buftiem</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <header class="site-header" id="topNav">
+    <div class="container nav-wrapper">
+      <a href="../" class="brand-link" id="brandLogo">
+        <div class="brand-badge">RB</div>
+        <div>
+          <span class="brand-title">Rayza<span class="text-accent">Buftiem</span></span>
+          <span class="brand-sub">Informatics ITS &bull; WebPro (D)</span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="nav-menu">
+        <li><a href="../" class="nav-link"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+        <li><a href="../profile/" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> Profile</a></li>
+        <li><a href="../hometown/" class="nav-link"><i class="fa-solid fa-city"></i> Hometown</a></li>
+        <li><a href="../food/" class="nav-link"><i class="fa-solid fa-utensils"></i> Local Food</a></li>
+        <li><a href="./" class="nav-link active"><i class="fa-solid fa-compass"></i> Tourist Places</a></li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="hamburger-btn" aria-label="Open mobile menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay">
+    <div class="mobile-drawer">
+      <div class="drawer-header">
+        <div class="brand-link">
+          <div class="brand-badge">RB</div>
+          <div>
+            <span class="brand-title">Rayza<span class="text-accent">Buftiem</span></span>
+          </div>
+        </div>
+        <button class="drawer-close-btn" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="../" class="drawer-link"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+        <li><a href="../profile/" class="drawer-link"><i class="fa-solid fa-user-astronaut"></i> Profile</a></li>
+        <li><a href="../hometown/" class="drawer-link"><i class="fa-solid fa-city"></i> Hometown</a></li>
+        <li><a href="../food/" class="drawer-link"><i class="fa-solid fa-utensils"></i> Local Food</a></li>
+        <li><a href="./" class="drawer-link active"><i class="fa-solid fa-compass"></i> Tourist Places</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- Tourist Hero Banner -->
+    <section class="hero-section" style="padding-bottom: 60px;">
+      <div class="hero-backdrop" style="background-image: url('../assets/images/monas.jpg');"></div>
+      <div class="container" style="text-align: center; max-width: 820px;">
+        <div class="hero-pill">
+          <span class="pulse-dot"></span>
+          <span>Curated Travel Guide &bull; Jakarta Landmarks</span>
+        </div>
+        <h1 class="hero-title">
+          Explore the Wonders of <span class="text-gradient">Jakarta City</span>
+        </h1>
+        <p class="hero-subtitle" style="margin: 0 auto;">
+          From monumental independence towers to centuries-old colonial squares, cultural archipelago parks, 
+          and seaside leisure havens — here are the five unmissable destinations in my hometown.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="section-spacer" style="padding-top: 20px;">
+      <div class="container">
+        <div class="filter-container" data-target-grid="touristGrid">
+          <button class="filter-btn active" data-filter="all"><i class="fa-solid fa-earth-asia"></i> All Landmarks</button>
+          <button class="filter-btn" data-filter="heritage"><i class="fa-solid fa-monument"></i> Historic Heritage</button>
+          <button class="filter-btn" data-filter="culture"><i class="fa-solid fa-masks-theater"></i> Culture &amp; Arts</button>
+          <button class="filter-btn" data-filter="recreation"><i class="fa-solid fa-umbrella-beach"></i> Recreation</button>
+          <button class="filter-btn" data-filter="architecture"><i class="fa-solid fa-mosque"></i> Harmony Architecture</button>
+        </div>
+
+        <!-- Tourist Cards Grid -->
+        <div class="bento-grid" id="touristGrid">
+
+          <!-- Landmark 1: Monas -->
+          <div class="card bento-col-4 filter-item" data-category="heritage">
+            <div class="card-media">
+              <img src="../assets/images/monas.jpg" alt="Monumen Nasional Monas">
+              <span class="card-category">Historic Heritage</span>
+            </div>
+            <h3 class="card-title">Monumen Nasional (Monas)</h3>
+            <p class="card-subtitle">Central Jakarta &bull; Symbol of Independence</p>
+            <p class="card-desc">
+              A 132-meter grand marble obelisk topped with a 14.5m bronze flame layered in 50 kg of pure gold. 
+              Offers panoramic 360-degree city views and an underground diorama museum of Indonesian history.
+            </p>
+            <div class="card-tags">
+              <span class="tag"><i class="fa-solid fa-ticket text-accent"></i> Rp 5.000 - 15.000</span>
+              <span class="tag"><i class="fa-solid fa-bus text-accent"></i> TJ Monas Station</span>
+            </div>
+            <div class="card-footer">
+              <span class="text-muted"><i class="fa-solid fa-clock"></i> 08:00 - 18:00</span>
+              <button class="btn btn-primary btn-sm" data-modal-target="modalMonas">
+                Visitor Guide &rarr;
+              </button>
+            </div>
+          </div>
+
+          <!-- Landmark 2: Kota Tua -->
+          <div class="card bento-col-4 filter-item" data-category="heritage">
+            <div class="card-media">
+              <img src="../assets/images/kotatua.jpg" alt="Kota Tua Jakarta">
+              <span class="card-category">Historic Heritage</span>
+            </div>
+            <h3 class="card-title">Kota Tua &amp; Museum Fatahillah</h3>
+            <p class="card-subtitle">West Jakarta &bull; 17th Century Batavia</p>
+            <p class="card-desc">
+              The historical epicenter of Dutch Batavia. Stroll across the cobblestone plaza, rent colorful vintage 
+              Onthel bicycles with wide-brimmed hats, and explore colonial-era museums and Cafe Batavia.
+            </p>
+            <div class="card-tags">
+              <span class="tag"><i class="fa-solid fa-ticket text-accent"></i> Plaza Free / Rp 5.000</span>
+              <span class="tag"><i class="fa-solid fa-train text-accent"></i> KRL Jakarta Kota</span>
+            </div>
+            <div class="card-footer">
+              <span class="text-muted"><i class="fa-solid fa-clock"></i> 24h Plaza</span>
+              <button class="btn btn-primary btn-sm" data-modal-target="modalKotaTua">
+                Visitor Guide &rarr;
+              </button>
+            </div>
+          </div>
+
+          <!-- Landmark 3: TMII -->
+          <div class="card bento-col-4 filter-item" data-category="culture">
+            <div class="card-media">
+              <img src="../assets/images/tmii.jpg" alt="Taman Mini Indonesia Indah">
+              <span class="card-category">Culture &amp; Arts</span>
+            </div>
+            <h3 class="card-title">Taman Mini Indonesia Indah (TMII)</h3>
+            <p class="card-subtitle">East Jakarta &bull; Indonesian Cultural Sanctuary</p>
+            <p class="card-desc">
+              A 150-hectare cultural park showcasing authentic traditional houses (anjungan) from all 38 Indonesian provinces, 
+              an archipelago miniature lake, cable car transit, and contemporary green botanical gardens.
+            </p>
+            <div class="card-tags">
+              <span class="tag"><i class="fa-solid fa-ticket text-accent"></i> Rp 25.000</span>
+              <span class="tag"><i class="fa-solid fa-train-tram text-accent"></i> LRT TMII Station</span>
+            </div>
+            <div class="card-footer">
+              <span class="text-muted"><i class="fa-solid fa-clock"></i> 06:00 - 20:00</span>
+              <button class="btn btn-primary btn-sm" data-modal-target="modalTmii">
+                Visitor Guide &rarr;
+              </button>
+            </div>
+          </div>
+
+          <!-- Landmark 4: Ancol -->
+          <div class="card bento-col-6 filter-item" data-category="recreation">
+            <div class="card-media">
+              <img src="../assets/images/ancol.jpg" alt="Taman Impian Jaya Ancol">
+              <span class="card-category">Recreation</span>
+            </div>
+            <h3 class="card-title">Taman Impian Jaya Ancol</h3>
+            <p class="card-subtitle">North Jakarta &bull; Coastal Entertainment Resort</p>
+            <p class="card-desc">
+              Jakarta's premier coastal amusement hub along Jakarta Bay. Features Dunia Fantasi (Dufan) theme park, 
+              Sea World oceanic tunnel aquarium, Atlantis Water Adventures, Marina pier, and breezy beachside promenades.
+            </p>
+            <div class="card-tags">
+              <span class="tag"><i class="fa-solid fa-ticket text-accent"></i> Gate Rp 30.000</span>
+              <span class="tag"><i class="fa-solid fa-water text-accent"></i> Coastal Waterfront</span>
+            </div>
+            <div class="card-footer">
+              <span class="text-muted"><i class="fa-solid fa-bus"></i> TJ Corridor 5 Ancol</span>
+              <button class="btn btn-primary btn-sm" data-modal-target="modalAncol">
+                Visitor Guide &rarr;
+              </button>
+            </div>
+          </div>
+
+          <!-- Landmark 5: Istiqlal & Cathedral -->
+          <div class="card bento-col-6 filter-item" data-category="architecture">
+            <div class="card-media">
+              <img src="../assets/images/istiqlal.jpg" alt="Istiqlal & Katedral">
+              <span class="card-category">Harmony Architecture</span>
+            </div>
+            <h3 class="card-title">Masjid Istiqlal &amp; Gereja Katedral</h3>
+            <p class="card-subtitle">Central Jakarta &bull; Symbol of Interfaith Harmony</p>
+            <p class="card-desc">
+              Standing directly facing one another in the heart of Jakarta, the largest mosque in Southeast Asia 
+              and the majestic neo-gothic Catholic Cathedral are linked beneath by the subterranean "Tunnel of Friendship" (Terowongan Silaturahmi), 
+              representing Indonesia's unity in diversity.
+            </p>
+            <div class="card-tags">
+              <span class="tag"><i class="fa-solid fa-ticket text-accent"></i> Free Entry</span>
+              <span class="tag"><i class="fa-solid fa-handshake-simple text-accent"></i> Terowongan Silaturahmi</span>
+            </div>
+            <div class="card-footer">
+              <span class="text-muted"><i class="fa-solid fa-train"></i> KRL / TJ Juanda</span>
+              <button class="btn btn-primary btn-sm" data-modal-target="modalIstiqlal">
+                Visitor Guide &rarr;
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals for Visitor Guide -->
+    <!-- Modal Monas -->
+    <div class="modal-overlay" id="modalMonas">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3>Monas Visitor Guide</h3>
+          <button class="modal-close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-media">
+            <img src="../assets/images/monas.jpg" alt="Monas">
+          </div>
+          <h4 style="margin-bottom: 8px;">Visiting Tips:</h4>
+          <p class="text-secondary" style="margin-bottom: 16px; line-height: 1.6;">
+            Purchase the observation deck elevator ticket early in the morning to avoid weekend queues. 
+            The expansive park grounds are perfect for cycling and morning jogs. Night illuminations with musical fountains take place on weekends.
+          </p>
+          <h4 style="margin-bottom: 8px;">Getting There:</h4>
+          <p class="text-secondary" style="font-size: 0.94rem;">
+            Take TransJakarta Corridor 1 (Blok M - Kota) and alight directly at <strong>Halte Monas</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Kota Tua -->
+    <div class="modal-overlay" id="modalKotaTua">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3>Kota Tua Travel Guide</h3>
+          <button class="modal-close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-media">
+            <img src="../assets/images/kotatua.jpg" alt="Kota Tua">
+          </div>
+          <h4 style="margin-bottom: 8px;">Highlights &amp; Activities:</h4>
+          <p class="text-secondary" style="margin-bottom: 16px; line-height: 1.6;">
+            Explore the Jakarta History Museum (Fatahillah), Museum Bank Indonesia, and the Wayang (Puppetry) Museum. 
+            Rent a classic colorful bicycle for Rp 25.000 / 30 mins. Savor a vintage coffee break at the historic <strong>Cafe Batavia</strong> overlooking the square.
+          </p>
+          <h4 style="margin-bottom: 8px;">Getting There:</h4>
+          <p class="text-secondary" style="font-size: 0.94rem;">
+            Take the KRL Commuter Line to <strong>Stasiun Jakarta Kota</strong> (Beos) and walk 3 minutes through the pedestrian underpass.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal TMII -->
+    <div class="modal-overlay" id="modalTmii">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3>TMII Explorer Guide</h3>
+          <button class="modal-close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-media">
+            <img src="../assets/images/tmii.jpg" alt="TMII">
+          </div>
+          <h4 style="margin-bottom: 8px;">Revitalized TMII:</h4>
+          <p class="text-secondary" style="margin-bottom: 16px; line-height: 1.6;">
+            Following extensive modernization, TMII is now an eco-friendly 70% green zone with electric shuttle buses and rental bikes. 
+            Witness the iconic sunset water dance show (Air Mancur Menari Tirta Cerita) featuring folklore holograms on the archipelago lake.
+          </p>
+          <h4 style="margin-bottom: 8px;">Getting There:</h4>
+          <p class="text-secondary" style="font-size: 0.94rem;">
+            Ride the LRT Jabodebek to <strong>Stasiun LRT TMII</strong> and take the dedicated green shuttle bus directly to Gate 1.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Ancol -->
+    <div class="modal-overlay" id="modalAncol">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3>Ancol Bayfront Guide</h3>
+          <button class="modal-close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-media">
+            <img src="../assets/images/ancol.jpg" alt="Ancol">
+          </div>
+          <h4 style="margin-bottom: 8px;">Top Attractions:</h4>
+          <p class="text-secondary" style="margin-bottom: 16px; line-height: 1.6;">
+            <strong>Dunia Fantasi (Dufan)</strong> for rollercoasters and Halilintar rides; <strong>Sea World</strong> for 35,000+ marine creatures; 
+            and <strong>Symphonie of The Sea</strong> beach promenade for sunset dining along the coast of Java Sea.
+          </p>
+          <h4 style="margin-bottom: 8px;">Getting There:</h4>
+          <p class="text-secondary" style="font-size: 0.94rem;">
+            TransJakarta Corridor 5 (Kampung Melayu - Ancol) or Commuter Line Pink Line to Stasiun Ancol.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Istiqlal -->
+    <div class="modal-overlay" id="modalIstiqlal">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3>Istiqlal &amp; Cathedral Harmony Guide</h3>
+          <button class="modal-close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-media">
+            <img src="../assets/images/istiqlal.jpg" alt="Istiqlal">
+          </div>
+          <h4 style="margin-bottom: 8px;">Architectural Marvel:</h4>
+          <p class="text-secondary" style="margin-bottom: 16px; line-height: 1.6;">
+            Istiqlal's monumental 45-meter diameter dome symbolizes 1945 independence year, supported by 12 massive stainless steel columns 
+            representing the Prophet's birthday (12 Rabiul Awal). Directly across, the 60-meter neo-gothic spires of Jakarta Cathedral 
+            exemplify harmonious coexistence in the capital.
+          </p>
+          <h4 style="margin-bottom: 8px;">Visitor Etiquette:</h4>
+          <p class="text-secondary" style="font-size: 0.94rem;">
+            Modest attire is required for both sanctuaries. Guided tours in multiple languages are provided at Istiqlal Visitor Information Center.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-link">
+            <div class="brand-badge">RB</div>
+            <div>
+              <span class="brand-title">Rayza<span class="text-accent">Buftiem</span></span>
+              <span class="brand-sub">Informatics ITS &bull; Web Programming (D)</span>
+            </div>
+          </div>
+          <p>
+            Department of Informatics, Institut Teknologi Sepuluh Nopember (ITS), Surabaya. 
+            Quiz 1 Project - Academic Year 2026/2027.
+          </p>
+          <div class="footer-socials">
+            <a href="https://github.com/rayzabuf" target="_blank" rel="noopener" class="social-icon-btn" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:rayzabuftiem@gmail.com" class="social-icon-btn" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Page Routing</h4>
+          <ul class="footer-links">
+            <li><a href="../">/quiz1 (Home)</a></li>
+            <li><a href="../profile/">/quiz1/profile</a></li>
+            <li><a href="../hometown/">/quiz1/hometown</a></li>
+            <li><a href="../food/">/quiz1/food</a></li>
+            <li><a href="./">/quiz1/tourist</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Course Info</h4>
+          <ul class="footer-links">
+            <li><span>EF234301 Web Programming</span></li>
+            <li><span>Class: D</span></li>
+            <li><span>Lecturer: Irfan Subakti</span></li>
+            <li><span>Asst: Callista FRG &amp; Kevin A</span></li>
+            <li><span>Term: 2026/2027(1)</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Student Details</h4>
+          <p class="text-secondary" style="font-size: 0.9rem; line-height: 1.7;">
+            <strong>Muhammad Rayza Buftiem</strong><br>
+            NRP: <code>5025251262</code><br>
+            Departemen Teknik Informatika<br>
+            Fakultas FTEIC, Kampus ITS Sukolilo<br>
+            Surabaya, Jawa Timur 60111
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Muhammad Rayza Buftiem. All rights reserved.
+        </div>
+        <div>
+          Academic Integrity Pledge signed &bull; Built for WebPro (D) Quiz 1
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+</body>
+</html>

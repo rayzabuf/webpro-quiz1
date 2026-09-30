@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Website & Jakarta Cultural Guide by Muhammad Rayza Buftiem - Web Programming (D) Quiz 1, Informatics ITS.">
+  <meta name="author" content="Muhammad Rayza Buftiem">
+  <meta property="og:title" content="Muhammad Rayza Buftiem | Web Programming Quiz 1">
+  <meta property="og:description" content="Personal portal, Jakarta hometown story, local Betawi culinary delights, and tourist guide.">
+  <meta property="og:type" content="website">
+  
+  <title>Home | Muhammad Rayza Buftiem - Web Programming Quiz 1</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <header class="site-header" id="topNav">
+    <div class="container nav-wrapper">
+      <a href="./" class="brand-link" id="brandLogo">
+        <div class="brand-badge">RB</div>
+        <div>
+          <span class="brand-title">Rayza<span class="text-accent">Buftiem</span></span>
+          <span class="brand-sub">Informatics ITS &bull; WebPro (D)</span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="nav-menu">
+        <li><a href="./" class="nav-link active" id="navHome"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+        <li><a href="./profile/" class="nav-link" id="navProfile"><i class="fa-solid fa-user-astronaut"></i> Profile</a></li>
+        <li><a href="./hometown/" class="nav-link" id="navHometown"><i class="fa-solid fa-city"></i> Hometown</a></li>
+        <li><a href="./food/" class="nav-link" id="navFood"><i class="fa-solid fa-utensils"></i> Local Food</a></li>
+        <li><a href="./tourist/" class="nav-link" id="navTourist"><i class="fa-solid fa-compass"></i> Tourist Places</a></li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-overlay" id="mobileOverlay">
+    <div class="mobile-drawer">
+      <div class="drawer-header">
+        <div class="brand-link">
+          <div class="brand-badge">RB</div>
+          <div>
+            <span class="brand-title">Rayza<span class="text-accent">Buftiem</span></span>
+          </div>
+        </div>
+        <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="./" class="drawer-link active"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+        <li><a href="./profile/" class="drawer-link"><i class="fa-solid fa-user-astronaut"></i> Profile</a></li>
+        <li><a href="./hometown/" class="drawer-link"><i class="fa-solid fa-city"></i> Hometown</a></li>
+        <li><a href="./food/" class="drawer-link"><i class="fa-solid fa-utensils"></i> Local Food</a></li>
+        <li><a href="./tourist/" class="drawer-link"><i class="fa-solid fa-compass"></i> Tourist Places</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-backdrop" style="background-image: url('./assets/images/jakarta-hero.jpg');"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="pulse-dot"></span>
+            <span>EF234301 Web Programming (D) &bull; Quiz 1 Project</span>
+          </div>
+          <h1 class="hero-title">
+            Exploring <span class="text-gradient">Jakarta Heritage</span> &amp; Modern Web Tech
+          </h1>
+          <p class="hero-subtitle">
+            Welcome to the personal digital showcase of <strong>Muhammad Rayza Buftiem</strong> (NRP: 5025251262), 
+            undergraduate student of Informatics at Institut Teknologi Sepuluh Nopember (ITS). 
+            Discover my background, my hometown roots in Jakarta, traditional Betawi cuisine, and iconic cultural landmarks.
+          </p>
+          <div class="hero-cta-group">
+            <a href="./profile/" class="btn btn-primary" id="ctaProfile">
+              <i class="fa-solid fa-id-card"></i> View Full Profile
+            </a>
+            <a href="./hometown/" class="btn btn-secondary" id="ctaHometown">
+              <i class="fa-solid fa-landmark-flag"></i> Discover Hometown
+            </a>
+            <a href="./food/" class="btn btn-secondary" id="ctaFood">
+              <i class="fa-solid fa-bowl-food"></i> Local Food
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-top">
+            <div class="badge-icon blue">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="badge-text">
+              <strong>Informatics Student</strong>
+              <span>Teknik Informatika ITS</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom">
+            <div class="badge-icon emerald">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="badge-text">
+              <strong>Jakarta Native</strong>
+              <span>Betawi Heritage &amp; Culture</span>
+            </div>
+          </div>
+
+          <!-- Featured Card -->
+          <div class="hero-card-featured">
+            <div class="avatar-wrapper">
+              <img src="./assets/images/rayza.jpg" alt="Muhammad Rayza Buftiem Photo">
+              <div class="avatar-tag">
+                <i class="fa-solid fa-circle-check"></i> Verified Student
+              </div>
+            </div>
+            <div class="hero-card-info">
+              <h3>Muhammad Rayza Buftiem</h3>
+              <p>NRP: 5025251262 &bull; Class D WebPro</p>
+              <div class="hero-stats-row">
+                <div class="stat-item">
+                  <div class="stat-num">ITS</div>
+                  <div class="stat-label">University</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-num">Jakarta</div>
+                  <div class="stat-label">Hometown</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-num">2026</div>
+                  <div class="stat-label">Term</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Portals Bento Grid -->
+    <section class="section-spacer" id="portals">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag"><i class="fa-solid fa-compass"></i> Website Directory</div>
+          <h2 class="section-title">Explore The <span class="text-gradient">Core Chapters</span></h2>
+          <p class="section-description">
+            Navigate through all five dedicated sections built with clean semantic HTML, modular CSS, 
+            and interactive JavaScript according to the project specifications.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Card 1: Profile -->
+          <div class="card bento-col-6">
+            <div class="card-media">
+              <img src="./assets/images/rayza.jpg" alt="Profile Thumbnail">
+              <span class="card-category"><i class="fa-solid fa-user"></i> About Me</span>
+            </div>
+            <h3 class="card-title">Student Profile &amp; Technical Skillset</h3>
+            <p class="card-subtitle">Biography &bull; Education &bull; Tech Stack &bull; Leadership</p>
+            <p class="card-desc">
+              Get to know Muhammad Rayza Buftiem, an ambitious Informatics student at ITS with experience in 
+              organizational leadership, fullstack web development, and algorithmic problem solving.
+            </p>
+            <div class="card-tags">
+              <span class="tag">HTML5 / CSS3 / JS</span>
+              <span class="tag">Python &amp; C++</span>
+              <span class="tag">Git &amp; Docker</span>
+              <span class="tag">Event Organizing</span>
+            </div>
+            <div class="card-footer">
+              <span class="text-muted"><i class="fa-solid fa-route"></i> /quiz1/profile</span>
+              <a href="./profile/" class="btn btn-primary btn-sm">Explore Profile &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Hometown -->
+          <div class="card bento-col-6">
+            <div class="card-media">
+              <img src="./assets/images/jakarta-hero.jpg" alt="Jakarta City Thumbnail">
+              <span class="card-category"><i class="fa-solid fa-city"></i> Hometown</span>
+            </div>
+            <h3 class="card-title">Hometown Story: Jakarta Metropolis</h3>
+            <p class="card-subtitle">History &bull; Betawi Traditions &bull; Modern Urban Marvels</p>
+            <p class="card-desc">
+              A comprehensive portrait of Indonesia's iconic capital city Jakarta: from ancient Sunda Kelapa and 
+              colonial Batavia to today's vibrant megacity, celebrating rich Betawi art and culture.
+            </p>
+            <div class="card-tags">
+              <span class="tag">Capital City</span>
+              <span class="tag">Betawi Culture</span>
+              <span class="tag">Ondel-Ondel</span>
+              <span class="tag">Modern Transit</span>
+            </div>
+            <div class="card-footer">
+              <span class="text-muted"><i class="fa-solid fa-route"></i> /quiz1/hometown</span>
+              <a href="./hometown/" class="btn btn-primary btn-sm">Explore Hometown &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Food -->
+          <div class="card bento-col-6">
+            <div class="card-media">
+              <img src="./assets/images/soto-betawi.jpg" alt="Local Food Thumbnail">
+              <span class="card-category"><i class="fa-solid fa-utensils"></i> Culinary</span>
+            </div>
+            <h3 class="card-title">Authentic Betawi Local Delicacies</h3>
+            <p class="card-subtitle">Soto Betawi &bull; Kerak Telor &bull; Asinan &bull; Bir Pletok</p>
+            <p class="card-desc">
+              Immerse in the culinary mastery of Jakarta. Discover secret recipes, flavor profiles, and heritage 
+              traditions of dishes that have delighted generations for hundreds of years.
+            </p>
+            <div class="card-tags">
+              <span class="tag">Savory &amp; Spiced</span>
+              <span class="tag">Interactive Recipes</span>
+              <span class="tag">Heritage Street Food</span>
+            </div>
+            <div class="card-footer">
+              <span class="text-muted"><i class="fa-solid fa-route"></i> /quiz1/food</span>
+              <a href="./food/" class="btn btn-primary btn-sm">Taste The Cuisine &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Card 4: Tourist Places -->
+          <div class="card bento-col-6">
+            <div class="card-media">
+              <img src="./assets/images/monas.jpg" alt="Monas Thumbnail">
+              <span class="card-category"><i class="fa-solid fa-compass"></i> Tourism</span>
+            </div>
+            <h3 class="card-title">Top Tourist Attractions &amp; Landmarks</h3>
+            <p class="card-subtitle">Monas &bull; Kota Tua &bull; TMII &bull; Ancol &bull; Istiqlal</p>
+            <p class="card-desc">
+              A curated travel guide covering Jakarta's most famous historic sites, cultural repositories, 
+              waterfront amusement parks, and monuments of tolerance and unity.
+            </p>
+            <div class="card-tags">
+              <span class="tag">National Monuments</span>
+              <span class="tag">Heritage Architecture</span>
+              <span class="tag">Transit Directions</span>
+            </div>
+            <div class="card-footer">
+              <span class="text-muted"><i class="fa-solid fa-route"></i> /quiz1/tourist</span>
+              <a href="./tourist/" class="btn btn-primary btn-sm">Discover Attractions &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz 1 Specification Checklist Card -->
+    <section class="section-spacer" style="background: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag"><i class="fa-solid fa-check-double"></i> Compliance &amp; Specs</div>
+          <h2 class="section-title">Assignment Deliverables &bull; EF234301 WebPro</h2>
+          <p class="section-description">
+            Built strictly adhering to all guidelines outlined in the Quiz 1 specification sheet.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <div class="card bento-col-4">
+            <div class="card-title" style="display: flex; align-items: center; gap: 10px;">
+              <i class="fa-solid fa-link text-accent"></i> Standardized URL Routing
+            </div>
+            <p class="card-desc">
+              Clean routing format strictly implemented:
+              <br><code>/quiz1</code> - Homepage
+              <br><code>/quiz1/profile</code> - Profile Page
+              <br><code>/quiz1/hometown</code> - Hometown Page
+              <br><code>/quiz1/food</code> - Local Food Page
+              <br><code>/quiz1/tourist</code> - Tourist Places Page
+            </p>
+          </div>
+
+          <div class="card bento-col-4">
+            <div class="card-title" style="display: flex; align-items: center; gap: 10px;">
+              <i class="fa-solid fa-code text-accent"></i> Modern Web Stack
+            </div>
+            <p class="card-desc">
+              Crafted with responsive semantic HTML5, custom vanilla CSS design tokens, dynamic dark/light 
+              mode toggling, interactive modal overlays, and client-side filtering algorithms.
+            </p>
+          </div>
+
+          <div class="card bento-col-4">
+            <div class="card-title" style="display: flex; align-items: center; gap: 10px;">
+              <i class="fa-solid fa-file-pdf text-accent"></i> Documentation &amp; Repo
+            </div>
+            <p class="card-desc">
+              Accompanied by comprehensive <code>Report.PDF</code> (design analysis, code review, evaluation), 
+              signed <code>Declaration.PDF</code>, and public GitHub repository deployment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-link">
+            <div class="brand-badge">RB</div>
+            <div>
+              <span class="brand-title">Rayza<span class="text-accent">Buftiem</span></span>
+              <span class="brand-sub">Informatics ITS &bull; Web Programming (D)</span>
+            </div>
+          </div>
+          <p>
+            Department of Informatics, Institut Teknologi Sepuluh Nopember (ITS), Surabaya. 
+            Quiz 1 Project - Academic Year 2026/2027.
+          </p>
+          <div class="footer-socials">
+            <a href="https://github.com/rayzabuf" target="_blank" rel="noopener" class="social-icon-btn" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:rayzabuftiem@gmail.com" class="social-icon-btn" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Page Routing</h4>
+          <ul class="footer-links">
+            <li><a href="./">/quiz1 (Home)</a></li>
+            <li><a href="./profile/">/quiz1/profile</a></li>
+            <li><a href="./hometown/">/quiz1/hometown</a></li>
+            <li><a href="./food/">/quiz1/food</a></li>
+            <li><a href="./tourist/">/quiz1/tourist</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Course Info</h4>
+          <ul class="footer-links">
+            <li><span>EF234301 Web Programming</span></li>
+            <li><span>Class: D</span></li>
+            <li><span>Lecturer: Irfan Subakti</span></li>
+            <li><span>Asst: Callista FRG &amp; Kevin A</span></li>
+            <li><span>Term: 2026/2027(1)</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Student Details</h4>
+          <p class="text-secondary" style="font-size: 0.9rem; line-height: 1.7;">
+            <strong>Muhammad Rayza Buftiem</strong><br>
+            NRP: <code>5025251262</code><br>
+            Departemen Teknik Informatika<br>
+            Fakultas FTEIC, Kampus ITS Sukolilo<br>
+            Surabaya, Jawa Timur 60111
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Muhammad Rayza Buftiem. All rights reserved.
+        </div>
+        <div>
+          Academic Integrity Pledge signed &bull; Built for WebPro (D) Quiz 1
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hometown Portrait of Jakarta: History, Betawi Culture, Modern Transit, and Cultural Legacy by Muhammad Rayza Buftiem.">
+  <meta name="author" content="Muhammad Rayza Buftiem">
+  <meta property="og:title" content="Hometown | Jakarta - Muhammad Rayza Buftiem">
+  <meta property="og:description" content="Discover the vibrant heritage and urban dynamism of Jakarta, the proud hometown of Muhammad Rayza Buftiem.">
+  
+  <title>Hometown: Jakarta | Muhammad Rayza Buftiem - Web Programming Quiz 1</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <header class="site-header" id="topNav">
+    <div class="container nav-wrapper">
+      <a href="../" class="brand-link" id="brandLogo">
+        <div class="brand-badge">RB</div>
+        <div>
+          <span class="brand-title">Rayza<span class="text-accent">Buftiem</span></span>
+          <span class="brand-sub">Informatics ITS &bull; WebPro (D)</span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="nav-menu">
+        <li><a href="../" class="nav-link"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+        <li><a href="../profile/" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> Profile</a></li>
+        <li><a href="./" class="nav-link active"><i class="fa-solid fa-city"></i> Hometown</a></li>
+        <li><a href="../food/" class="nav-link"><i class="fa-solid fa-utensils"></i> Local Food</a></li>
+        <li><a href="../tourist/" class="nav-link"><i class="fa-solid fa-compass"></i> Tourist Places</a></li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="hamburger-btn" aria-label="Open mobile menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay">
+    <div class="mobile-drawer">
+      <div class="drawer-header">
+        <div class="brand-link">
+          <div class="brand-badge">RB</div>
+          <div>
+            <span class="brand-title">Rayza<span class="text-accent">Buftiem</span></span>
+          </div>
+        </div>
+        <button class="drawer-close-btn" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="../" class="drawer-link"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+        <li><a href="../profile/" class="drawer-link"><i class="fa-solid fa-user-astronaut"></i> Profile</a></li>
+        <li><a href="./" class="drawer-link active"><i class="fa-solid fa-city"></i> Hometown</a></li>
+        <li><a href="../food/" class="drawer-link"><i class="fa-solid fa-utensils"></i> Local Food</a></li>
+        <li><a href="../tourist/" class="drawer-link"><i class="fa-solid fa-compass"></i> Tourist Places</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hometown Hero Banner -->
+    <section class="hero-section" style="padding-bottom: 70px;">
+      <div class="hero-backdrop" style="background-image: url('../assets/images/jakarta-hero.jpg');"></div>
+      <div class="container">
+        <div style="max-width: 820px; margin: 0 auto; text-align: center;">
+          <div class="hero-pill">
+            <span class="pulse-dot"></span>
+            <span>DKI Jakarta Special Capital Region &bull; Founded 22 June 1527</span>
+          </div>
+          <h1 class="hero-title">
+            Jakarta: <span class="text-gradient">Metropolitan Heart</span> &amp; Betawi Soul
+          </h1>
+          <p class="hero-subtitle" style="margin: 0 auto 30px;">
+            Born and raised in East Jakarta, I have witnessed the rapid metamorphosis of Jakarta from a historic 
+            spice harbor into one of Southeast Asia's most dynamic megacities, where timeless Betawi warmth intertwines with cutting-edge modernity.
+          </p>
+
+          <!-- Live Jakarta Time Widget -->
+          <div style="display: inline-flex; align-items: center; gap: 20px; background: var(--bg-card); padding: 12px 28px; border-radius: var(--radius-full); border: 1px solid var(--border-color); backdrop-filter: blur(12px);">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <i class="fa-regular fa-clock text-accent"></i>
+              <span style="font-size: 0.88rem; color: var(--text-secondary);">Current Jakarta Time:</span>
+              <strong id="jakarta-clock" style="font-family: var(--font-mono); color: var(--accent-cyan);">--:--:-- WIB</strong>
+            </div>
+            <div style="width: 1px; height: 16px; background: var(--border-color);"></div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-cloud-sun" style="color: #f59e0b;"></i>
+              <span style="font-size: 0.88rem; color: var(--text-secondary);">Tropical: 31&deg;C &bull; UTC+7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Facts Bento Grid -->
+    <section class="section-spacer" style="padding-top: 20px;">
+      <div class="container">
+        <div class="bento-grid">
+          <div class="card bento-col-4">
+            <div class="badge-icon blue" style="margin-bottom: 16px;"><i class="fa-solid fa-landmark"></i></div>
+            <h3 class="card-title">Ancient Port to Modern Capital</h3>
+            <p class="card-desc">
+              Originating as Sunda Kelapa in the 14th century, the city was established as Jayakarta on June 22, 1527 by Fatahillah, renamed Batavia by the Dutch, and declared Indonesia's capital in 1945.
+            </p>
+          </div>
+
+          <div class="card bento-col-4">
+            <div class="badge-icon emerald" style="margin-bottom: 16px;"><i class="fa-solid fa-masks-theater"></i></div>
+            <h3 class="card-title">Indigenous Betawi Heritage</h3>
+            <p class="card-desc">
+              The native Betawi people emerged from a centuries-long cultural tapestry of Malay, Sundanese, Javanese, Chinese, Arab, and Portuguese influences, creating unique arts, language, and humor.
+            </p>
+          </div>
+
+          <div class="card bento-col-4">
+            <div class="badge-icon blue" style="margin-bottom: 16px; background: rgba(6, 182, 212, 0.2); color: var(--accent-cyan);"><i class="fa-solid fa-train-subway"></i></div>
+            <h3 class="card-title">Modern Public Mobility</h3>
+            <p class="card-desc">
+              Today's Jakarta boasts an integrated transit ecosystem including the high-speed MRT, LRT Jabodebek, Commuter Line, and the world's longest Bus Rapid Transit system (TransJakarta).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cultural Pillars of Betawi -->
+    <section class="section-spacer" style="background: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag"><i class="fa-solid fa-feather-pointed"></i> Living Traditions</div>
+          <h2 class="section-title">Iconic Elements of <span class="text-gradient">Betawi Culture</span></h2>
+          <p class="section-description">
+            Customs, performing arts, and traditional folklore that define the cultural identity of my hometown.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Item 1: Ondel-Ondel -->
+          <div class="card bento-col-6">
+            <div style="display: flex; gap: 20px; align-items: flex-start;">
+              <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(244, 63, 94, 0.15); color: var(--accent-rose); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">
+                <i class="fa-solid fa-person-walking"></i>
+              </div>
+              <div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Ondel-Ondel (The Giant Protectors)</h3>
+                <p class="text-secondary" style="font-size: 0.94rem; line-height: 1.6;">
+                  Iconic 2.5-meter giant puppets constructed with woven bamboo frames, adorned with vibrant ceremonial robes 
+                  and kembang kelapa crown ornaments. Originally crafted to ward off misfortune, they now star in festive community parades and civic celebrations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Palang Pintu -->
+          <div class="card bento-col-6">
+            <div style="display: flex; gap: 20px; align-items: flex-start;">
+              <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(99, 102, 241, 0.15); color: var(--accent-indigo); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">
+                <i class="fa-solid fa-hand-fist"></i>
+              </div>
+              <div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Tradisi Palang Pintu</h3>
+                <p class="text-secondary" style="font-size: 0.94rem; line-height: 1.6;">
+                  A dramatic ceremonial greeting in Betawi weddings where the groom's champions must 'win' entry through 
+                  a witty exchange of rhyming couplets (pantun), martial arts sparring (silat Beksi), and recitation of the Holy Quran (sike).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Gambang Kromong -->
+          <div class="card bento-col-6">
+            <div style="display: flex; gap: 20px; align-items: flex-start;">
+              <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">
+                <i class="fa-solid fa-guitar"></i>
+              </div>
+              <div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Musik Gambang Kromong</h3>
+                <p class="text-secondary" style="font-size: 0.94rem; line-height: 1.6;">
+                  An enchanting hybrid musical orchestra blending traditional Indonesian gamelan and xylophones with Chinese string 
+                  instruments like the Kongahyan, Tehyan, and Sukong, creating the soulful soundtrack of Betawi festive life.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Lenong -->
+          <div class="card bento-col-6">
+            <div style="display: flex; gap: 20px; align-items: flex-start;">
+              <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(245, 158, 11, 0.15); color: var(--accent-amber); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">
+                <i class="fa-solid fa-theater-masks"></i>
+              </div>
+              <div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Teater Rakyat Lenong</h3>
+                <p class="text-secondary" style="font-size: 0.94rem; line-height: 1.6;">
+                  Traditional theatrical comedies known for spontaneous banter, slapstick humor, and moral folk tales. 
+                  Divided into Lenong Denes (aristocratic tales) and Lenong Preman (humorous stories of everyday folk heroes like Si Pitung).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Geographic & Demographic Fast Facts -->
+    <section class="section-spacer">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag"><i class="fa-solid fa-chart-pie"></i> Jakarta at a Glance</div>
+          <h2 class="section-title">Demographics &amp; <span class="text-gradient">Urban Data</span></h2>
+        </div>
+
+        <div class="bento-grid">
+          <div class="card bento-col-3" style="text-align: center;">
+            <div class="stat-num" style="font-size: 2.2rem; color: var(--accent-indigo); margin-bottom: 6px;">10.6M+</div>
+            <div class="stat-label">Provincial Population</div>
+          </div>
+          <div class="card bento-col-3" style="text-align: center;">
+            <div class="stat-num" style="font-size: 2.2rem; color: var(--accent-cyan); margin-bottom: 6px;">661.5 km&sup2;</div>
+            <div class="stat-label">Total Land Area</div>
+          </div>
+          <div class="card bento-col-3" style="text-align: center;">
+            <div class="stat-num" style="font-size: 2.2rem; color: var(--accent-emerald); margin-bottom: 6px;">5 Cities + 1 Regency</div>
+            <div class="stat-label">Administrative Divisions</div>
+          </div>
+          <div class="card bento-col-3" style="text-align: center;">
+            <div class="stat-num" style="font-size: 2.2rem; color: var(--accent-amber); margin-bottom: 6px;">497+ Years</div>
+            <div class="stat-label">Living History</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-link">
+            <div class="brand-badge">RB</div>
+            <div>
+              <span class="brand-title">Rayza<span class="text-accent">Buftiem</span></span>
+              <span class="brand-sub">Informatics ITS &bull; Web Programming (D)</span>
+            </div>
+          </div>
+          <p>
+            Department of Informatics, Institut Teknologi Sepuluh Nopember (ITS), Surabaya. 
+            Quiz 1 Project - Academic Year 2026/2027.
+          </p>
+          <div class="footer-socials">
+            <a href="https://github.com/rayzabuf" target="_blank" rel="noopener" class="social-icon-btn" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:rayzabuftiem@gmail.com" class="social-icon-btn" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Page Routing</h4>
+          <ul class="footer-links">
+            <li><a href="../">/quiz1 (Home)</a></li>
+            <li><a href="../profile/">/quiz1/profile</a></li>
+            <li><a href="./">/quiz1/hometown</a></li>
+            <li><a href="../food/">/quiz1/food</a></li>
+            <li><a href="../tourist/">/quiz1/tourist</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Course Info</h4>
+          <ul class="footer-links">
+            <li><span>EF234301 Web Programming</span></li>
+            <li><span>Class: D</span></li>
+            <li><span>Lecturer: Irfan Subakti</span></li>
+            <li><span>Asst: Callista FRG &amp; Kevin A</span></li>
+            <li><span>Term: 2026/2027(1)</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Student Details</h4>
+          <p class="text-secondary" style="font-size: 0.9rem; line-height: 1.7;">
+            <strong>Muhammad Rayza Buftiem</strong><br>
+            NRP: <code>5025251262</code><br>
+            Departemen Teknik Informatika<br>
+            Fakultas FTEIC, Kampus ITS Sukolilo<br>
+            Surabaya, Jawa Timur 60111
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Muhammad Rayza Buftiem. All rights reserved.
+        </div>
+        <div>
+          Academic Integrity Pledge signed &bull; Built for WebPro (D) Quiz 1
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+</body>
+</html>

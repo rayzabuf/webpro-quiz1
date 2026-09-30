@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Profile and Academic Portfolio of Muhammad Rayza Buftiem (NRP: 5025251262) - Informatics ITS.">
+  <meta name="author" content="Muhammad Rayza Buftiem">
+  <meta property="og:title" content="Profile | Muhammad Rayza Buftiem">
+  <meta property="og:description" content="Academic profile, educational timeline, technical skills, and leadership experiences.">
+  
+  <title>Profile | Muhammad Rayza Buftiem - Web Programming Quiz 1</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <header class="site-header" id="topNav">
+    <div class="container nav-wrapper">
+      <a href="../" class="brand-link" id="brandLogo">
+        <div class="brand-badge">RB</div>
+        <div>
+          <span class="brand-title">Rayza<span class="text-accent">Buftiem</span></span>
+          <span class="brand-sub">Informatics ITS &bull; WebPro (D)</span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="nav-menu">
+        <li><a href="../" class="nav-link"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+        <li><a href="./" class="nav-link active"><i class="fa-solid fa-user-astronaut"></i> Profile</a></li>
+        <li><a href="../hometown/" class="nav-link"><i class="fa-solid fa-city"></i> Hometown</a></li>
+        <li><a href="../food/" class="nav-link"><i class="fa-solid fa-utensils"></i> Local Food</a></li>
+        <li><a href="../tourist/" class="nav-link"><i class="fa-solid fa-compass"></i> Tourist Places</a></li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="hamburger-btn" aria-label="Open mobile menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay">
+    <div class="mobile-drawer">
+      <div class="drawer-header">
+        <div class="brand-link">
+          <div class="brand-badge">RB</div>
+          <div>
+            <span class="brand-title">Rayza<span class="text-accent">Buftiem</span></span>
+          </div>
+        </div>
+        <button class="drawer-close-btn" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="../" class="drawer-link"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+        <li><a href="./" class="drawer-link active"><i class="fa-solid fa-user-astronaut"></i> Profile</a></li>
+        <li><a href="../hometown/" class="drawer-link"><i class="fa-solid fa-city"></i> Hometown</a></li>
+        <li><a href="../food/" class="drawer-link"><i class="fa-solid fa-utensils"></i> Local Food</a></li>
+        <li><a href="../tourist/" class="drawer-link"><i class="fa-solid fa-compass"></i> Tourist Places</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- Profile Hero Section -->
+    <section class="section-spacer" style="padding-top: 60px;">
+      <div class="container">
+        <div class="card" style="padding: 40px; margin-bottom: 40px; background: linear-gradient(145deg, var(--bg-card), var(--bg-secondary));">
+          <div class="bento-grid" style="align-items: center;">
+            <div class="bento-col-4" style="text-align: center;">
+              <div class="avatar-wrapper" style="max-width: 280px; margin: 0 auto 20px;">
+                <img src="../assets/images/rayza.jpg" alt="Muhammad Rayza Buftiem">
+                <div class="avatar-tag">
+                  <i class="fa-solid fa-badge-check"></i> ITS Student
+                </div>
+              </div>
+              <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+                <button class="btn btn-secondary btn-sm" data-copy="5025251262">
+                  <i class="fa-regular fa-copy"></i> Copy NRP: 5025251262
+                </button>
+                <a href="mailto:rayzabuftiem@gmail.com" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-envelope"></i> Email Me
+                </a>
+              </div>
+            </div>
+
+            <div class="bento-col-8">
+              <div class="badge-tag"><i class="fa-solid fa-id-card"></i> Student Dossier</div>
+              <h1 style="font-size: clamp(2rem, 3.2vw, 2.6rem); margin-bottom: 10px;">
+                Muhammad Rayza Buftiem
+              </h1>
+              <p style="color: var(--accent-cyan); font-weight: 600; font-size: 1.1rem; margin-bottom: 16px;">
+                Undergraduate Student &bull; Department of Informatics, Institut Teknologi Sepuluh Nopember (ITS)
+              </p>
+              <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 24px;">
+                I am an energetic Informatics undergraduate at ITS Surabaya, passionate about modern web engineering, 
+                distributed systems, and human-centric software solutions. Born and raised in Jakarta, I actively balance 
+                rigorous academic computing with organizational leadership, event direction, and collaborative innovation.
+              </p>
+
+              <div class="hero-stats-row" style="background: var(--bg-secondary); padding: 18px 24px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                <div class="stat-item">
+                  <div class="stat-num">5025251262</div>
+                  <div class="stat-label">Student ID (NRP)</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-num">WebPro (D)</div>
+                  <div class="stat-label">Course Class</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-num">Jakarta</div>
+                  <div class="stat-label">Hometown</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-num">Surabaya</div>
+                  <div class="stat-label">Campus City</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detailed Biodata Bento Grid -->
+        <div class="section-header" style="margin-top: 50px;">
+          <div class="badge-tag"><i class="fa-solid fa-address-book"></i> Personal Details</div>
+          <h2 class="section-title">Official Student <span class="text-gradient">Information</span></h2>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Card: Personal Biodata -->
+          <div class="card bento-col-6">
+            <h3 class="card-title" style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+              <i class="fa-solid fa-user-circle text-accent"></i> Core Identity
+            </h3>
+            <div style="display: flex; flex-direction: column; gap: 14px;">
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                <span class="text-muted"><i class="fa-solid fa-signature"></i> Full Legal Name</span>
+                <span style="font-weight: 600;">Muhammad Rayza Buftiem</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                <span class="text-muted"><i class="fa-solid fa-cake-candles"></i> Place &amp; Date of Birth</span>
+                <span style="font-weight: 600;">Jakarta, 02 Oktober 2005</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                <span class="text-muted"><i class="fa-solid fa-venus-mars"></i> Gender</span>
+                <span style="font-weight: 600;">Laki - Laki (Male)</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                <span class="text-muted"><i class="fa-solid fa-moon"></i> Religion</span>
+                <span style="font-weight: 600;">Islam</span>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span class="text-muted"><i class="fa-solid fa-flag"></i> Nationality</span>
+                <span style="font-weight: 600;">Indonesian (WNI)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Academic Affiliation -->
+          <div class="card bento-col-6">
+            <h3 class="card-title" style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+              <i class="fa-solid fa-graduation-cap text-accent"></i> Academic Affiliation
+            </h3>
+            <div style="display: flex; flex-direction: column; gap: 14px;">
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                <span class="text-muted"><i class="fa-solid fa-university"></i> University</span>
+                <span style="font-weight: 600;">Institut Teknologi Sepuluh Nopember</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                <span class="text-muted"><i class="fa-solid fa-laptop-code"></i> Department</span>
+                <span style="font-weight: 600;">Teknik Informatika (Informatics)</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                <span class="text-muted"><i class="fa-solid fa-building"></i> Faculty</span>
+                <span style="font-weight: 600;">Fakultas FTEIC</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                <span class="text-muted"><i class="fa-solid fa-book-bookmark"></i> Course Subject</span>
+                <span style="font-weight: 600;">EF234301 Web Programming</span>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span class="text-muted"><i class="fa-solid fa-envelope"></i> Student Email</span>
+                <span style="font-weight: 600; font-family: var(--font-mono); font-size: 0.88rem;">5025251262@student.its.ac.id</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Educational Journey Timeline -->
+        <div class="section-spacer">
+          <div class="section-header">
+            <div class="badge-tag"><i class="fa-solid fa-timeline"></i> Milestones</div>
+            <h2 class="section-title">Educational <span class="text-gradient">Journey</span></h2>
+            <p class="section-description">
+              Formal academic pathway from primary school to tertiary studies at Indonesia's leading engineering institute.
+            </p>
+          </div>
+
+          <div class="card" style="padding: 40px;">
+            <div class="timeline">
+              <!-- Item 1: ITS -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-period">2025 &ndash; Present (Active)</div>
+                <h3 class="timeline-title">Institut Teknologi Sepuluh Nopember (ITS)</h3>
+                <div class="timeline-org">S1 Teknik Informatika (Bachelor in Computer Science / Informatics)</div>
+                <p class="timeline-desc">
+                  Studying computational theory, object-oriented programming, data structures, web systems architecture, 
+                  operating systems, and database engineering. Active in collaborative campus technical development.
+                </p>
+              </div>
+
+              <!-- Item 2: SMA -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-period">2021 &ndash; 2024</div>
+                <h3 class="timeline-title">SMA Insan Cendekia</h3>
+                <div class="timeline-org">Senior High School &bull; Natural Sciences (MIPA)</div>
+                <p class="timeline-desc">
+                  Elected as <strong>Wakil Ketua OSIS (Vice President of Student Council)</strong>. Coordinated schoolwide 
+                  academic Olympiads, art and sports festivals, and represented the school in regional youth leadership forums.
+                </p>
+              </div>
+
+              <!-- Item 3: GIS Junior High -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-period">2018 &ndash; 2021</div>
+                <h3 class="timeline-title">Global Islamic School (GIS)</h3>
+                <div class="timeline-org">Junior High School</div>
+                <p class="timeline-desc">
+                  Served as <strong>Bendahara OSIS (Treasurer of Student Council)</strong>. Managed student body funds, 
+                  audited project budgets, and fostered financial transparency for student council initiatives.
+                </p>
+              </div>
+
+              <!-- Item 4: GIS Elementary -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-period">2012 &ndash; 2018</div>
+                <h3 class="timeline-title">Global Islamic School (GIS)</h3>
+                <div class="timeline-org">Elementary School</div>
+                <p class="timeline-desc">
+                  Built foundational academic excellence, moral integrity, and bilingual communication skills in Jakarta.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Skills Section -->
+        <div class="section-spacer" style="padding-top: 0;">
+          <div class="section-header">
+            <div class="badge-tag"><i class="fa-solid fa-microchip"></i> Capabilities</div>
+            <h2 class="section-title">Technical <span class="text-gradient">Skillset</span></h2>
+            <p class="section-description">
+              Core competencies spanning frontend web technologies, systems programming, and development tooling.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-brands fa-html5 text-sunset"></i> HTML5 &amp; Semantic Web</span>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-brands fa-css3-alt" style="color: #38bdf8;"></i> Modern CSS &amp; Responsive UI</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 88%;"></div></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-brands fa-js" style="color: #facc15;"></i> JavaScript ES6+ &amp; DOM</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-brands fa-python text-accent"></i> Python Programming</span>
+                <span class="skill-pct">86%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 86%;"></div></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-solid fa-code text-gradient"></i> C / C++ &amp; OOP</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 82%;"></div></div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-brands fa-git-alt" style="color: #f97316;"></i> Git Version Control &amp; GitHub</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-link">
+            <div class="brand-badge">RB</div>
+            <div>
+              <span class="brand-title">Rayza<span class="text-accent">Buftiem</span></span>
+              <span class="brand-sub">Informatics ITS &bull; Web Programming (D)</span>
+            </div>
+          </div>
+          <p>
+            Department of Informatics, Institut Teknologi Sepuluh Nopember (ITS), Surabaya. 
+            Quiz 1 Project - Academic Year 2026/2027.
+          </p>
+          <div class="footer-socials">
+            <a href="https://github.com/rayzabuf" target="_blank" rel="noopener" class="social-icon-btn" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:rayzabuftiem@gmail.com" class="social-icon-btn" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Page Routing</h4>
+          <ul class="footer-links">
+            <li><a href="../">/quiz1 (Home)</a></li>
+            <li><a href="./">/quiz1/profile</a></li>
+            <li><a href="../hometown/">/quiz1/hometown</a></li>
+            <li><a href="../food/">/quiz1/food</a></li>
+            <li><a href="../tourist/">/quiz1/tourist</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Course Info</h4>
+          <ul class="footer-links">
+            <li><span>EF234301 Web Programming</span></li>
+            <li><span>Class: D</span></li>
+            <li><span>Lecturer: Irfan Subakti</span></li>
+            <li><span>Asst: Callista FRG &amp; Kevin A</span></li>
+            <li><span>Term: 2026/2027(1)</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Student Details</h4>
+          <p class="text-secondary" style="font-size: 0.9rem; line-height: 1.7;">
+            <strong>Muhammad Rayza Buftiem</strong><br>
+            NRP: <code>5025251262</code><br>
+            Departemen Teknik Informatika<br>
+            Fakultas FTEIC, Kampus ITS Sukolilo<br>
+            Surabaya, Jawa Timur 60111
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Muhammad Rayza Buftiem. All rights reserved.
+        </div>
+        <div>
+          Academic Integrity Pledge signed &bull; Built for WebPro (D) Quiz 1
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+</body>
+</html>
